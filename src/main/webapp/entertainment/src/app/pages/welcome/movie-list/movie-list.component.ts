@@ -37,7 +37,8 @@ export class MovieListComponent implements OnInit {
 
   openVeido(item) {
     this.store.set(LS_MOVIE, item);
-    this.router.navigateByUrl('/welcome/player');
+    this.router.navigateByUrl('/player');
+    //this.router.navigateByUrl('/welcome/player');
   }
 
 }

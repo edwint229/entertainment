@@ -11,6 +11,7 @@ import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { WelcomeModule } from './pages/welcome/welcome.module';
+import { FullscreenPlayerModule } from './pages/fullscreen-player/fullscreen-player.module'
 
 registerLocaleData(zh);
 
@@ -26,7 +27,8 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     NgZorroAntdModule,
-    WelcomeModule
+    WelcomeModule,
+    FullscreenPlayerModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
